@@ -13,6 +13,9 @@ PROJECTS = [
     ('Productivity Extension','dev-productivity-extension','Python · Browser APIs','A focus timer with local statistics.'),
 ]
 
+# These projects are ready locally; GitHub temporarily limited repository creation.
+PENDING_REPOS = {'game-level-editor','secure-file-vault','realtime-sensor-dashboard','obj-model-viewer'}
+
 
 def create_app():
     app = Flask(__name__)
@@ -20,7 +23,7 @@ def create_app():
 
     @app.get('/')
     def index():
-        return render_template('index.html', title='Python project portfolio', projects=PROJECTS)
+        return render_template('index.html', title='Python project portfolio', projects=PROJECTS, pending=PENDING_REPOS)
 
     @app.get('/robots.txt')
     def robots():
