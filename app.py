@@ -13,13 +13,13 @@ PROJECTS = [
     ('Productivity Extension','dev-productivity-extension','Python · Browser APIs','A focus timer with local statistics.'),
 ]
 
-# These projects are ready locally; GitHub temporarily limited repository creation.
+# Repositories waiting to be uploaded.
 PENDING_REPOS = {'game-level-editor','secure-file-vault','realtime-sensor-dashboard','obj-model-viewer'}
 
 
 def create_app():
     app = Flask(__name__)
-    app.config.update(APP_TITLE='TSalim22 / Portfolio', APP_DESCRIPTION='Python projects, practical tools and learning experiments.')
+    app.config.update(APP_TITLE='TSalim22 / Portfolio', APP_DESCRIPTION='My Python projects.')
 
     @app.get('/')
     def index():
