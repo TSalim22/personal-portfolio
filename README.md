@@ -33,7 +33,7 @@ On macOS or Linux, activate with `source .venv/bin/activate` instead.
 
 Open http://127.0.0.1:5000.
 
-Edit `app.py` to change the projects, `templates/index.html` for the page text, and `static/style.css` for the design. Projects waiting to be uploaded are labelled on the page.
+Edit `app.py` to change the projects, `templates/index.html` for the page text, and `static/style.css` for the design.
 
 ## Tests
 

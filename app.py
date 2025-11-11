@@ -13,17 +13,13 @@ PROJECTS = [
     ('Productivity Extension','dev-productivity-extension','Python · Browser APIs','A focus timer with local statistics.'),
 ]
 
-# Repositories waiting to be uploaded.
-PENDING_REPOS = {'game-level-editor','secure-file-vault','realtime-sensor-dashboard','obj-model-viewer'}
-
-
 def create_app():
     app = Flask(__name__)
     app.config.update(APP_TITLE='TSalim22 / Portfolio', APP_DESCRIPTION='My Python projects.')
 
     @app.get('/')
     def index():
-        return render_template('index.html', title='Python project portfolio', projects=PROJECTS, pending=PENDING_REPOS)
+        return render_template('index.html', title='Python project portfolio', projects=PROJECTS)
 
     @app.get('/robots.txt')
     def robots():
